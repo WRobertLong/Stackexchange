@@ -2,9 +2,9 @@
 #
 #  Robert Long 20 Jan 2020
 #
-# https://stats.stackexchange.com/questions/445578/how-do-dags-help-to-reduce-bias-in-causal-inference
+#  https://stats.stackexchange.com/questions/445578/how-do-dags-help-to-reduce-bias-in-causal-inference
 #
-# confounder bias
+#  confounder bias
 
 set.seed(15)
 N <- 100
@@ -108,6 +108,7 @@ summary(lm(Y ~ X)) # hunky dory. No association
 # Now condition on collider Z
 
 summary(lm(Y ~ X + Z))   # horror story !
+
 
 
 
