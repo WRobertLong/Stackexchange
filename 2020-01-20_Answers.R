@@ -83,3 +83,38 @@ dtPos <- dtPos[dtPos$Test >= 22, ]
 summary(lm(Cancer ~ Activity, data = dtPos))
 
 summary(lm(Cancer ~ Activity, data = dtNeg))
+
+
+#################################################
+#
+#
+# Investigate the E-bias phenomenom suggested by
+# Greg's DAG
+#
+# A and B are exogenous and both cause Z.
+# A also causes X, while Y causes X
+
+set.seed(15)
+N <- 100
+A <- rnorm(N, 10, 2)
+B <- rnorm(N, 10, 2)
+Z <- A + B + rnorm(N)
+
+X <- A + rnorm(N)
+Y <- B + rnorm(N)
+
+summary(lm(Y ~ X)) # hunky dory. No association
+
+# Now condition on collider Z
+
+summary(lm(Y ~ X + Z))   # horror story !
+
+
+
+
+
+
+
+
+
+
