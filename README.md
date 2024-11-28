@@ -1,6 +1,6 @@
 # StackExchange Solutions Repository
 
-This repository contains code that I use to answer questions on (mostly) Cross Validated (https://stats.stackexchange.com/) and Stack Overflow (https://stackoverflow.com/), with some on datascience.se and SoftwareEngineering.se. It includes various R scripts and data files associated with topics in statistics, data analysis, and statistical modeling. Given the nature of this work - ansawering questions in my spare time - please do not expect to find production-quality code here.
+This repository contains code that I use to answer questions on (mostly) Cross Validated (https://stats.stackexchange.com/) Stack Overflow (https://stackoverflow.com/), https://datascience.stackexchange.com/ and occaisionally https://softwareengineering.stackexchange.com/ . It includes various Python and R scripts and data files associated with topics in statistics, data analysis, and statistical modeling. Given the nature of this work - ansawering questions in my spare time - please do not expect to find production-quality code here.
 
 For anyone intereted, here are my active StackExchange profiles:
 

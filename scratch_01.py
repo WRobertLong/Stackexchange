@@ -1,5 +1,3 @@
-# https://datascience.stackexchange.com/questions/13099/interpreting-multiple-linear-regression
-
 import numpy as np
 import pandas as pd
 from scipy.stats import norm

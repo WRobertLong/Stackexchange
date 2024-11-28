@@ -1,6 +1,20 @@
-# First, ignore everything
+# Ignore everything by default
 *
-# Now, whitelist anything that's a directory
+
+# Whitelist directories so subdirectories are included
 !*/
-# And just source control these:
+
+# Include .R, .py, and .md files
 !*.R
+!*.py
+!*.md
+
+# Include the .gitignore file itself
+!.gitignore
+
+# Exclude any directories with `_env` in the name (override whitelisting)
+*_env/
+*_env/**
+
+# Whitelist all other subdirectories
+!*/
